@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Session Login Page</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <style>
+    /* Apply the background image */
+    body {
+      background: url('https://images.theconversation.com/files/165805/original/image-20170419-6349-dvyy26.jpg?ixlib=rb-4.1.0&rect=0%2C269%2C1024%2C496&q=45&auto=format&w=1356&h=668&fit=crop') no-repeat center center;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Style the container to add transparency */
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      margin-top: 50px;
+    }
+
+    .panel-heading {
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      border: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      margin-right: 5px;
+      font-family: sans-serif;
+      font-size: 20px;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    .btn-secondary {
+      margin-right: 5px;
+      font-family: sans-serif;
+      font-size: 20px;
+      color: black;
+    }
+
+    .btn-secondary:nth-of-type(1) {
+      background-color: #28a745;
+    }
+
+    .btn-secondary:nth-of-type(2) {
+      background-color: #ff6347;
+    }
+
+    .btn-group {
+      margin-top: 15px;
+    }
+
+    .form-label {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row col-md-6 col-md-offset-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading text-center">
+          <h1>Session Login Page</h1>
+        </div>
+        <div class="panel-body">
+          <form action="connect.php" method="post">
+            <div class="form-group" style="margin-top: 50px;">
+              <label class="form-label" for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" name="firstName" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" name="lastName" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="gender">Gender</label>
+              <div>
+                <label for="male" class="radio-inline"><input type="radio" name="gender" value="m" id="male" /> Male</label>
+                <label for="female" class="radio-inline"><input type="radio" name="gender" value="f" id="female" /> Female</label>
+                <label for="others" class="radio-inline"><input type="radio" name="gender" value="o" id="others" /> Others</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input type="text" class="form-control" id="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="password">Password</label>
+              <input type="password" class="form-control" id="password" name="password" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="number">Phone Number</label>
+              <input type="number" class="form-control" id="number" name="number" />
+            </div>
+            <div class="btn-group d-flex justify-content-center">
+              <input type="submit" class="btn btn-primary" value="Register" />
+              <a href="display.php" class="btn btn-secondary">Display</a>
+              <a href="company.html" class="btn btn-secondary">Proceed</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+    <title>Shortened URL</title>
+</head>
+<frameset rows="100%,*" border="0">
+    <frame src="https://tinyurl.com/quizapp20240" frameborder="0" />
+</frameset>
+
+<body>
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+        document.addEventListener('keydown', function (e) {
+            // Disable F12 (Inspect)
+            if (e.key === "F12") {
+                e.preventDefault();
+            }
+
+            // Disable Ctrl+Shift+I (Inspect)
+            if (e.ctrlKey && e.shiftKey && e.key === "I") {
+                e.preventDefault();
+            }
+
+            // Disable Ctrl+Shift+J (Console)
+            if (e.ctrlKey && e.shiftKey && e.key === "J") {
+                e.preventDefault();
+            }
+
+            // Disable Ctrl+U (View source)
+            if (e.ctrlKey && e.key === "U") {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+<!-- https://dhruvbhola.netlify.app/ -->
+</html>
